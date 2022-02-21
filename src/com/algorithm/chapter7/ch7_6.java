@@ -21,7 +21,7 @@ public class ch7_6 {
         // String[] arr = S.split(" ");
         // *******************************************************************************
 
-        // #ㄱ StringTokenizer를 이용하는 방법.
+        // ## StringTokenizer를 이용하는 방법.
         // #1
         // String S = sc.nextLine();
         // #2
