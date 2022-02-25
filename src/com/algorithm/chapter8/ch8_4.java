@@ -19,7 +19,7 @@ public class ch8_4 {
          * => (A - B) * i = V
         **/
 
-        /*
+        /* Scanner 오답 = 시간초과
         Scanner sc = new Scanner(System.in);
 
         int A = sc.nextInt();
@@ -30,8 +30,8 @@ public class ch8_4 {
         int n = (A-B);
         */
 
-        // 오답
         /*
+        오답 = 정상에 올라간 후에는 미끄러지지 않음을 누락함
         while (true) {
             if (V <= n) {
                 System.out.println(cnt);
@@ -45,6 +45,7 @@ public class ch8_4 {
         }
         */
 
+        // 14108 KB / 124 ms
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
@@ -52,8 +53,8 @@ public class ch8_4 {
         int B = Integer.parseInt(st.nextToken());
         int V = Integer.parseInt(st.nextToken());
 
-
         int cnt = (V-B) / (A-B);
+        System.out.println("(V-B)/(A-B) => " + (V-B) + " / " + (A-B) + "= " + cnt);
         if ((V-B) % (A-B) != 0) {
             cnt++;
         }
