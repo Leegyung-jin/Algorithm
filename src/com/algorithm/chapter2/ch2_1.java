@@ -10,14 +10,14 @@ public class ch2_1 {
 
     public static void main(String[] args) throws IOException {
         /*
-        // #1. Scanner를 이용한 경우
+        // #1. Scanner를 이용한 경우 (17792 KB / 220 ms)
         Scanner sc = new Scanner(System.in);
 
         int A = sc.nextInt();
         int B = sc.nextInt();
         */
 
-        // #2. BufferedReader 이용한 경우
+        // #2. BufferedReader 이용한 경우 (14188 KB / 132 ms)
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
